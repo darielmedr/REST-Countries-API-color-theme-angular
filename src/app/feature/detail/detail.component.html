@@ -1,0 +1,61 @@
+<div class="wrapper bg-theme">
+  <button mat-flat-button class="mat-elevation-z2" routerLink="/home">
+    <mat-icon>west</mat-icon>
+    <span>Back</span>
+  </button>
+
+  <div class="detail-wrapper">
+    <div class="image">
+      <img [src]="country.flag" alt="{{ country.name }} flag" />
+    </div>
+    <div class="content">
+      <h2>{{ country.name }}</h2>
+
+      <div class="flex-info">
+        <div class="left-info">
+          <p><span class="bold">Native Name: </span>{{ country.nativeName }}</p>
+          <p>
+            <span class="bold">Population: </span
+            >{{ country.population | number }}
+          </p>
+          <p><span class="bold">Region: </span>{{ country.region }}</p>
+          <p><span class="bold">Sub Region: </span>{{ country.subregion }}</p>
+          <p><span class="bold">Capital: </span>{{ country.capital }}</p>
+        </div>
+        <div class="right-info">
+          <p>
+            <span class="bold">Top Level Domain: </span>
+            <span class="space" *ngFor="let item of country.topLevelDomain">
+              {{ item }}
+            </span>
+          </p>
+          <p>
+            <span class="bold">Currencies: </span>
+            <span class="space" *ngFor="let item of country.currencies">
+              {{ item }}
+            </span>
+          </p>
+          <p>
+            <span class="bold">Languages: </span>
+            <span class="space" *ngFor="let item of country.languages">
+              {{ item }}
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="borders">
+        <p class="bold">Border Countries:</p>
+        <div class="countries">
+          <button
+            mat-flat-button
+            class="mat-elevation-z2"
+            *ngFor="let borderCountry of country.borders"
+          >
+            {{ borderCountry }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

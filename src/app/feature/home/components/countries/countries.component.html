@@ -1,0 +1,7 @@
+<div class="wrapper" *ngIf="countries">
+  <ng-container *ngFor="let country of countries">
+    <app-country-card [routerLink]="['/detail']" [state]="country" [country]="country"></app-country-card>
+  </ng-container>
+</div>
+
+<ng-template></ng-template>

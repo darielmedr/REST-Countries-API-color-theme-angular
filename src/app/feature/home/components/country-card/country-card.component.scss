@@ -1,0 +1,21 @@
+.mat-card {
+  height: 100%;
+
+  img {
+    min-height: 47%;
+  }
+
+  .mat-card-content {
+    padding: 1.6rem;
+
+    .mat-card-title {
+      font-size: var(--font-size-title);
+      margin-bottom: var(--font-size-title);
+      font-weight: var(--font-weight-bold);
+    }
+
+    p {
+      margin-bottom: var(--font-size-text-100);
+    }
+  }
+}

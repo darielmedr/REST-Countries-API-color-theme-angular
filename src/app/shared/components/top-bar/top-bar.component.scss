@@ -1,0 +1,35 @@
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  justify-content: space-between;
+  height: 10rem;
+  padding: 0 5%;
+
+  h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-title);
+    color: var(--color-text);
+    letter-spacing: 1px;
+  }
+
+  a,
+  .mat-icon {
+    font-size: var(--font-size-text-100);
+    color: var(--color-text);
+    font-weight: var(--font-weight-medium);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .mat-icon {
+      width: var(--font-size-text-100);
+      height: var(--font-size-text-100);
+      margin-right: 0.5rem;
+    }
+  }
+}

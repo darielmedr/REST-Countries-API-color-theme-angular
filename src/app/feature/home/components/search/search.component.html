@@ -1,0 +1,21 @@
+<div class="flex-container">
+  <mat-form-field class="search mat-elevation-z2">
+    <mat-label>Search for a country...</mat-label>
+    <mat-icon matPrefix>search</mat-icon>
+    <input
+      matInput
+      type="search"
+      [formControl]="searchField"
+      (input)="search()"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="filter mat-elevation-z2">
+    <mat-label>Filter by Region</mat-label>
+    <mat-select placeholder="Filtered by all regions" [formControl]="filter" (valueChange)="regionChanged($event)">
+      <mat-option *ngFor="let region of regions" [value]="region">
+        {{ region | titlecase }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
