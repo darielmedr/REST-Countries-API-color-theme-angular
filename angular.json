@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rest-countries-api-with-color-theme-switcher": {
+    "country-finder": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rest-countries-api-with-color-theme-switcher",
+            "outputPath": "dist/country-finder",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rest-countries-api-with-color-theme-switcher:build"
+            "browserTarget": "country-finder:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rest-countries-api-with-color-theme-switcher:build:production"
+              "browserTarget": "country-finder:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rest-countries-api-with-color-theme-switcher:build"
+            "browserTarget": "country-finder:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "rest-countries-api-with-color-theme-switcher:serve"
+            "devServerTarget": "country-finder:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "rest-countries-api-with-color-theme-switcher:serve:production"
+              "devServerTarget": "country-finder:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "rest-countries-api-with-color-theme-switcher"
+  "defaultProject": "country-finder"
 }

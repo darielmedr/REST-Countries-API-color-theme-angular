@@ -1,5 +1,5 @@
 {
-  "name": "rest-countries-api-with-color-theme-switcher",
+  "name": "country-finder",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
