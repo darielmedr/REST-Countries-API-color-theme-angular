@@ -8,8 +8,8 @@ import CountrySearch from '../models/country-search';
 @Injectable()
 export class CountryService {
 
-  baseUrl: string = 'https://restcountries.eu/rest/v2';
-  fields: string = 'name;flag;capital;region;subregion;nativeName;population;topLevelDomain;currencies;languges;borders';
+  baseUrl: string = 'https://restcountries.com/v2';
+  fields: string = 'name,flag,capital,region,subregion,nativeName,population,topLevelDomain,currencies,languges,borders';
 
   private searchSubject$: BehaviorSubject<CountrySearch> = new BehaviorSubject(<CountrySearch>
     {
