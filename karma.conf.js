@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/rest-countries-api-with-color-theme-switcher'),
+      dir: require('path').join(__dirname, './coverage/country-finder'),
       subdir: '.',
       reporters: [
         { type: 'html' },

@@ -1,15 +1,19 @@
 # Country finder
 
-This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) challenge on Frontend Mentor.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-- [Author](#author)
+- [Country finder](#country-finder)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+      - [Desktop View](#desktop-view)
+      - [Mobile View](#mobile-view)
+    - [Links](#links)
+    - [Built with](#built-with)
+  - [Author](#author)
 
 ## Overview
 
@@ -33,10 +37,11 @@ Users should be able to:
 #### Mobile View
 
 ![](./src/assets/result-screenshots/mobile.png)
+
 ### Links
 
-- Solution URL: [https://github.com/darielmedr/REST-Countries-API-color-theme-angular](https://github.com/darielmedr/REST-Countries-API-color-theme-angular)
-- Live Site URL: [https://darielmedr.github.io/REST-Countries-API-color-theme-angular](https://darielmedr.github.io/REST-Countries-API-color-theme-angular)
+- Solution URL: [https://github.com/darielmedr/country-finder](https://github.com/darielmedr/country-finder)
+- Live Site URL: [https://darielmedr.github.io/country-finder](https://darielmedr.github.io/country-finder)
 
 ### Built with
 
