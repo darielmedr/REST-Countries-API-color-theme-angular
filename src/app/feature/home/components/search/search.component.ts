@@ -12,10 +12,10 @@ import { RegionStrings } from '../../types/region-string';
 })
 export class SearchComponent implements OnInit {
 
-  searchField: FormControl = new FormControl();
-  filter: FormControl = new FormControl();
+  public searchField: FormControl = new FormControl();
+  public filter: FormControl = new FormControl();
 
-  regions: string[] = [];
+  public regions: string[] = [];
 
   constructor(
     private countryService: CountryService

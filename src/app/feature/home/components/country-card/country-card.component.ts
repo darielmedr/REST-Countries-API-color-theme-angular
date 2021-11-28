@@ -10,7 +10,7 @@ import { CountryService } from '../../services/country.service';
 export class CountryCardComponent implements OnInit {
 
   @Input()
-  public country: Country;
+  public country: Country = {} as Country;
 
   constructor(private countryService: CountryService) {
     this.country = this.countryService.getDefaultCountry();

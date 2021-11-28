@@ -1,6 +1,6 @@
 <mat-toolbar class="mat-elevation-z4">
     <h1>Where in the world?</h1>
-    <a (click)="toggleDarkMode()">
+    <a class="switch-btn" (click)="toggleDarkMode()">
         <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
         <span>{{ isDarkMode ? 'Light' : 'Dark' }} Mode</span>
     </a>
