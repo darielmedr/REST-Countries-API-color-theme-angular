@@ -1,6 +1,6 @@
 # Country finder
 
-This is a solution to the [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) challenge on Frontend Mentor.
+Solution for the [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) challenge on Frontend Mentor.
 
 ## Table of contents
 
@@ -13,6 +13,12 @@ This is a solution to the [REST Countries API with color theme switcher](https:/
       - [Mobile View](#mobile-view)
     - [Links](#links)
     - [Built with](#built-with)
+  - [Usage](#usage)
+    - [Development server](#development-server)
+    - [Build production static files](#build-production-static-files)
+    - [Build Docker image](#build-docker-image)
+    - [Run Docker image](#run-docker-image)
+  - [Docker Hub repository](#docker-hub-repository)
   - [Author](#author)
 
 ## Overview
@@ -32,11 +38,11 @@ Users should be able to:
 
 #### Desktop View
 
-![](./src/assets/result-screenshots/desktop.png)
+![Desktop screenshot](./src/assets/result-screenshots/desktop.png)
 
 #### Mobile View
 
-![](./src/assets/result-screenshots/mobile.png)
+![Mobile screenshot](./src/assets/result-screenshots/mobile.png)
 
 ### Links
 
@@ -51,6 +57,36 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [Angular](https://angular.io/) - Angular framework
+
+## Usage
+
+### Development server
+
+```shell
+npm run start
+```
+
+### Build production static files
+
+```shell
+npm run build:prod
+```
+
+### Build Docker image
+
+```shell
+npm run build:docker
+```
+
+### Run Docker image
+
+```shell
+npm run start:docker
+```
+
+## Docker Hub repository
+
+[Country finder](https://hub.docker.com/repository/docker/darielmedr/countryfinder) repository.
 
 ## Author
 

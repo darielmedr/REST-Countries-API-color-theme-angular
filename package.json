@@ -1,12 +1,14 @@
 {
   "name": "country-finder",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:gh": "ng build --configuration production --output-path docs --base-href /country-finder/ && cp docs/index.html docs/404.html",
+    "build:gh": "ng build -c production --output-path docs --base-href /country-finder/ && cp docs/index.html docs/404.html",
+    "build:prod": "ng build -c production",
+    "build:docker": "docker build --rm -f Dockerfile -t country-finder:latest .",
+    "start:docker": "docker run --rm -d  -p 80:80/tcp country-finder:latest",
     "test": "ng test",
-    "e2e": "ng e2e",
     "release": "standard-version",
     "commit": "cz"
   },
